@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d1{
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    padding: 10px;
+    margin-left: 50px;
+    font-size: larger;
+}
+.nav{
+    margin-top: 10px;
+}
+.nav-bar{
+        
+    display: flex;      
+    justify-content: space-around;  
+}
+.nav-items{
+    padding: 10px;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.btn1{
+    margin-top: 10px;
+    margin-right: 80px;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: rgb(185, 232, 248);
+    color: blue;
+}
+
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.left{
+    width: 50%;
+    line-height: 50px;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.btn2{
+    margin-top: 10px;
+    margin-right: 80px;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: blue;
+    color: white;
+}
+.btn2:hover{
+    transform: scale(1.2);
+    transform: rotate(-10deg);
+    transition: 0.5s;
+}
+.heading{
+    color: blue;
+    font-size: largers;
+}
+p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: normal;
+}
+.right{
+    width: 50%;
+    padding-left: 80px;
+    animation-name: imgmove;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    transform: scale(0.3);
+}
+img{
+    width: 500px;
+}
+
+@keyframes imgmove {
+    0%{
+        transform: translate(0, 0);
+    }
+    25%{
+        transform: translate(50px,0);
+    }
+    50%{
+        transform: translate(50px, 50px);
+    }
+    75%{
+        transform: translate(0, 50px);
+    }
+
+}
